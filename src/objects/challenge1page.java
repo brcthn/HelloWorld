@@ -2,51 +2,47 @@ package objects;
 
 import java.util.Scanner;
 
-public class challenge {
+public class challenge1page {
     public static void main(String[] args) {
-//        sentence("Seni cok seviyorum Askim");
-//        sum(30,40,50,30,60);
-//        multiplicationtable();
-//        seven();
-//        eleven();
-//        number(100);
-//        lastvowels("burcu");
-//        combining("burcu","hasan");
-//        same("gotum bu sorulur mu");
-//        add('a');
-//        factorial(5);
-//        vowel("burcuhasan");
-
-        //      System.out.println(justrepeat("burcuhasan"));
-//        intrepeat(1234);
-//        addstring("naber");
-        //       scannerfirst();
-//        scannersum();
-        //       scanneraddword();
-        //     select();
-        //      nottogether();
-//          nottogetherr();
-        //      star(3);
-        //      star1(4);
-        //     cube(5);
-        //   difference(20,10);
-//           System.out.println(obeb(42,15));
-//           ekok(6,17);
-        //  numberwriter(20);
-        //  consonant("aysemneolurgeridon");
-        // bomgame(5);
-        //  allofthem("bcçdfgğhjklmnprsştvyzaıoueiöü");
-        //  allofthem("asdsd");
-
-        //     System.out.println( unigsessiz("aysemneolurgeridonayse"));
-      //  lastquestion(1000);
-        fibonnanci(7);
+        sentence("GoodMorning Everybody ");
+        sum(30, 40, 50, 30, 60);
+        multiplicationtable();
+        seven();
+        eleven();
+        number(30);
+        lastvowels("burcu");
+        combining("burcu", "hasan");
+        same("gotum bu sorulur mu");
+        add('a');
+        factorial(5);
+        vowel("burcuhasan");
+        System.out.println(justrepeat("burcuhasan"));
+        intrepeat(1234);
+        addstring("naber");
+        scannerfirst();
+        scannersum();
+        scanneraddword();
+        select();
+        nottogether();
+        nottogetherr();
+        star(3);
+        star1(4);
+        cube(5);
+        difference(20, 10);
+        System.out.println(obeb(42, 15));
+        ekok(6, 17);
+        numberwriter(25);
+        consonant("aysemneolurgeridon");
+        bomgame(5);
+        allofthem("bcçdfgğhjklmnprsştvyzaıoueiöü");
+        allofthem("asdsd");
+        System.out.println(unigsessiz("aysemneolurgeridonayse"));
+        lastquestion(1000);
     }
 
     public static void sentence(String text) {
         System.out.println(text);
     }
-
 
     public static void sum(int n, int k, int l, int i, int m) {
         System.out.println(n + k + l + i + m);
@@ -56,11 +52,9 @@ public class challenge {
         for (int h = 1; h < 11; h++) {
             for (int k = 1; k < 11; k++) {
                 System.out.println(h + "*" + k + "=" + h * k);
-
             }
         }
     }
-
 
     public static void seven() {
         for (int i = 1; i < 15; i++) {
@@ -85,7 +79,6 @@ public class challenge {
 
     public static void lastvowels(String text) {
         System.out.println(text.charAt(text.length() - 1));
-
     }
 
     public static void combining(String first, String second) {
@@ -94,6 +87,7 @@ public class challenge {
     }
 
     public static void same(String text) {
+
         System.out.println(text);
     }
 
@@ -101,7 +95,6 @@ public class challenge {
         String s = String.valueOf(n);
         String last = s.concat(s);
         System.out.println(last);
-
     }
 
     public static void factorial(int n) {
@@ -121,6 +114,7 @@ public class challenge {
     }
 
     public static void vowel(String text) {
+
         String toplam = " ";
         char[] list = text.toCharArray();
         for (int i = 0; i < text.length(); i++) {
@@ -129,31 +123,21 @@ public class challenge {
             }
         }
         System.out.println(toplam);
-
-
     }
 
     public static String justrepeat(String text) {
-
-
         String toplam = "";
         char[] list = text.toCharArray();
-
         for (int i = 0; i < text.length(); i++) {
             if (list[i] == 'a' || list[i] == 'e' || list[i] == 'i' || list[i] == 'ö' || list[i] == 'ü' || list[i] == 'o' || list[i] == 'u' || list[i] == 'ı') {
                 if (!toplam.contains(String.valueOf(list[i]))) {
-
-
                     toplam = toplam + list[i];
                 }
-
-
             }
 
         }
         return (toplam);
     }
-
 
     public static void intrepeat(int number) {
         String toplam = "";
@@ -162,8 +146,6 @@ public class challenge {
         for (int i = 0; i < list1.length; i++) {
             if (!toplam.contains(String.valueOf(list1[i]))) {
                 toplam = toplam + list1[i];
-
-
             }
         }
         if (toplam.length() < list.length()) {
@@ -171,29 +153,21 @@ public class challenge {
         } else {
             System.out.println("true");
         }
-
     }
-
 
     public static void addstring(String word) {
         System.out.println(word + " la bebe");
     }
-
-
     public static void scannerfirst() {
         Scanner name = new Scanner(System.in);
         String name1 = name.nextLine();
         System.out.println(name1);
     }
 
-
     public static void scannersum() {
-
-
         Scanner sum = new Scanner(System.in);
         int number = sum.nextInt();
         System.out.println(number + 1);
-
     }
 
     public static void scanneraddword() {
@@ -201,8 +175,6 @@ public class challenge {
         String ad = word.nextLine();
         addstring(ad);
     }
-
-
     public static void select() {
         Scanner vowel = new Scanner(System.in);
         String word = vowel.nextLine();
@@ -212,8 +184,6 @@ public class challenge {
             System.out.println("false");
         }
     }
-
-
     public static void nottogether() {
         Scanner vowel = new Scanner(System.in);
         String word = vowel.nextLine();
@@ -223,9 +193,7 @@ public class challenge {
         } else {
             System.out.println("false");
         }
-
     }
-
 
     public static void nottogetherr() {
         Scanner vowel = new Scanner(System.in);
@@ -236,53 +204,34 @@ public class challenge {
         } else {
             System.out.println("false");
         }
-
-
     }
 
     public static void star(int number) {
         for (int i = 0; i < number; i++) {
-            for (int k = 0; k < number; k++) {
-
-            }
             System.out.println("*");
-
         }
-
     }
-
 
     public static void star1(int number) {
         for (int i = 0; i < number; i++) {
-            for (int k = 0; k < number; k++) {
-
-            }
             System.out.print("*");
-
-
         }
     }
-
 
     public static void cube(int number) {
         for (int i = 0; i < number; i++) {
             for (int k = 0; k < number; k++) {
-
-
                 System.out.print("*");
             }
             System.out.println();
         }
     }
 
-
     public static void difference(int n, int k) {
         System.out.println(Math.abs(n - k));
     }
 
-
     public static int obeb(int a, int b) {
-
         int enbuyuk, enkucuk, r;
         if (a > b) {
             enbuyuk = a;
@@ -296,10 +245,7 @@ public class challenge {
             r = enbuyuk % enkucuk;
             enbuyuk = enkucuk;
             enkucuk = r;
-
         }
-
-
         return enbuyuk;
     }
 
@@ -338,7 +284,6 @@ public class challenge {
             birler = n - 90;
             System.out.println("doksan");
         }
-
 
         switch (birler) {
             case 1:
@@ -383,8 +328,6 @@ public class challenge {
 
         }
         System.out.println(toplam);
-
-
     }
 
     public static void bomgame(int n) {
@@ -404,41 +347,29 @@ public class challenge {
         for (int i = 0; i < text.length(); i++) {
             if (list[i] != 'a' && list[i] != 'e' && list[i] != 'i' && list[i] != 'ö' && list[i] != 'ü' && list[i] != 'o' && list[i] != 'u' && list[i] != 'ı') {
                 if (!toplam.contains(String.valueOf(list[i]))) {
-
-
                     toplam = toplam + list[i];
                 }
             }
-
         }
         return (toplam);
-
     }
 
     public static void allofthem(String text) {
-
         if (justrepeat(text).length() == 8) {
             if (unigsessiz(text).length() == 21) {
                 System.out.println("true");
                 return;
             }
-
-
         }
-
         System.out.println("false");
 
-
 //   if (newtext[i] == 'a' && newtext[i] == 'b' && newtext[i] == 'c' && newtext[i] == 'd' && newtext[i] == 'e' && newtext[i] == 'f' && newtext[i] == 'g' && newtext[i] == 'h'  && newtext[i] == 'i' && newtext[i] == 'j' && newtext[i] == 'k' && newtext[i] == 'l' && newtext[i] == 'm' && newtext[i] == 'n' && newtext[i] == 'o' && newtext[i] == 'p' && newtext[i] == 'r' && newtext[i] == 's' && newtext[i] == 't' && newtext[i] == 'u' && newtext[i] == 'v' && newtext[i] == 'y' && newtext[i] == 'z' && newtext[i] == 'i' && newtext[i] == 'ü' && newtext[i] == 'ı' && newtext[i] == 'ç' && newtext[i] == 'ğ' && newtext[i] == 'ö' && newtext[i] == 'ş') {
-
-
     }
 
     public static void lastquestion(int n) {
         int toplam = 0;
         for (int i = 0; i < n; i++) {
             if (i * 3 < n) {
-
                 toplam = toplam + i * 3;
             } else {
                 break;
@@ -453,13 +384,4 @@ public class challenge {
         }
         System.out.println(toplam);
     }
-
-    public static void fibonnanci(int n) {
-
-
-      fibonnanci(n);
-
-        System.out.println(fibonnanci(n));
-
-
-    }}
+}

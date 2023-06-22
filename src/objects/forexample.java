@@ -9,21 +9,14 @@ public class forexample {
         //    for(int k=0; k<101;k++)
         //        System.out.println(j+"*" +k + "="+j*k);
 
-
         System.out.println(volwes("aysemneolurgeridon"));
     }
-
     private static String volwes(String name) {
         String result = "";
         char[] list = name.toCharArray();
-
         for(int i=name.length(); i>0 ;i--) {
             result = result + list[i-1];
         }
-
         return result;
-
     }
-
-
 }

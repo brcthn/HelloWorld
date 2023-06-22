@@ -7,10 +7,9 @@ public class Solution {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-//        Hk2();
+        Hk2();
         HK3();
     }
-
     public static void Hk1() {
         int N = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
@@ -23,10 +22,8 @@ public class Solution {
                 System.out.println("Not Weird");
             }
         }
-
         scanner.close();
     }
-
 
     public static void Hk2() {
         Scanner scan = new Scanner(System.in);
@@ -34,8 +31,6 @@ public class Solution {
         double d = scan.nextDouble();
         scan.nextLine();
         String s = scan.nextLine();
-
-
         System.out.println("String: " + s);
         System.out.println("Double: " + d);
         System.out.println("Int: " + i);
@@ -47,21 +42,15 @@ public class Solution {
         for(int i=0;i<3;i++){
             String s1=sc.next();
             int x=sc.nextInt();
-
             String ara="";
              if(0<x && x<10){
                  ara=ara+0+0;
              }else if(9<x && x<100){
                  ara=ara+0;
              }
-
-
              for(int j =0;j<15-s1.length();j++){
                  ara = " " + ara;
              }
-
-
-
             System.out.printf("%s%s%d",s1,ara,x);
             System.out.println();
         }

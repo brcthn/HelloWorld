@@ -3,30 +3,28 @@ import java.util.Scanner;
 public class Exercise1 {
 
     public static void main(String[] args) {
-//        sayi(6);
-//        apostra(0.6);
-//        avarage(60, 60, 50);
-//        circle(6);
-//        example("Was it a car or a cat I saw?");
-//        example1("Did Hannah see bees? Hannah did");
-//        example2("Did Hannah see bees? Hannah did.", 12);
-//        referred("Did Hannah see bees? Hannah did.");
-//        bler("Did Hannah see bees? Hannah did.", 'b');
-//        //name();
-//        //avarages();
-//        ters("burcu");
-//        multi();
-//        sayi();
-//        istenilencarpim(6);
-//        starline(4);
-        //       starlinereverse(4);
-        //      starln(4);
-        // sc();
+        sayi(6);
+        apostra(0.6);
+        avarage(60, 60, 50);
+        circle(6);
+        example("Was it a car or a cat I saw?");
+        example1("Did Hannah see bees? Hannah did");
+        example2("Did Hannah see bees? Hannah did.", 12);
+        referred("Did Hannah see bees? Hannah did.");
+        bler("Did Hannah see bees? Hannah did.", 'b');
+        name();
+        avarages();
+        ters("burcu");
+        multi();
+        sayi();
+        istenilencarpim(6);
+        starline(4);
+        starlinereverse(4);
+        starln(4);
         character("burcuhasan");
-        //starone(4);
+        starone(4);
         ar("burcu");
     }
-
 
     public static void sayi(int number) {
         System.out.println(number * number);
@@ -91,7 +89,6 @@ public class Exercise1 {
 //
 //         (ogrenci1.not+ogrenci2.not)/2
 
-
         Scanner isim = new Scanner(System.in);
         String adsoyad = isim.nextLine();
         int yas = isim.nextInt();
@@ -105,7 +102,6 @@ public class Exercise1 {
         float puan3 = avarage.nextFloat();
         avarage(puan1, puan2, puan3);
     }
-
     // REVERSE
 
     public static void ters(String text) {
@@ -171,60 +167,35 @@ public class Exercise1 {
 
     }
 
-
-//     public static void sc() {
-//    Scanner islem = new Scanner(System.in);
-//    float numberone = islem.nextFloat();
-//    float numbertwo = islem.nextFloat();
-//        islem.nextLine();
-//    String isle = islem.nextLine();
-//        if(islem ==+)
-//
-//    {
-//        System.out.println(numberone + numbertwo);
-//    } else if(islem ==-)
-//
-//    {
-//
-//    }
-//        System.out.println(numberone -numbertwo);
-
-    public static void character(String kelime) {
+    public static void character(String word) {
         int adet = 0;
         Character[] unluler = {'a', 'e', 'i', 'u', 'o'};
-
-        for (int i = 0; i < kelime.length(); i++) {
-
+        for (int i = 0; i < word.length(); i++) {
             for (int j = 0; j < unluler.length; j++) {
-                if (kelime.charAt(i) == unluler[j]) {
+                if (word.charAt(i) == unluler[j]) {
                     adet++;
                 }
             }
-
-
         }
-
         System.out.println(adet);
+    }
+
+    public static void starone(int limit) {
+        for (int i = 0; i < limit; i++) {
+            for (int k = 0; k < i + 1; k++) {
+                System.out.println('a');
+            }
+            for (int n = 0; n < (2 * n + 1); n++) {
+                System.out.println('*');
+            }
+        }
 
     }
 
-
-//    public static void starone(int limit) {
-//        for (int i = 0; i < limit; i++) {
-//            for (int k = 0; k < i + 1; k++) {
-//                System.out.println('a');
-//            }
-//            for (int n = 0; n < (2 * n + 1); n++) {
-//                System.out.println('*');
-//            }
-//        }
-//
-//    }
-
     public static void ar(String isim) {
-        char [ ] harfler = isim.toCharArray();
+        char[] harfler = isim.toCharArray();
 
-        for (int i = isim.length()-1; i >= 0; i--) {
+        for (int i = isim.length() - 1; i >= 0; i--) {
 
             System.out.print(harfler[i]);
         }

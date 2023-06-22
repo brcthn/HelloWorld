@@ -1,5 +1,7 @@
 package alive;
 
+import gettersetter.ClassA;
+
 public class Animal {
 
     int age;
@@ -12,15 +14,10 @@ public class Animal {
     boolean isteeth;
 
     //Constructor
-
-
     //behavioral
-
-
-
-
     //getter & setter
-    public boolean isIsteeth() {
+    public boolean isIsteeth()
+    {
         return isteeth;
     }
 
